@@ -10,4 +10,6 @@ Currently, two official plugins are available:
 
 https://www.figma.com/design/iuUqPGo4UHyJsmdjScdVNZ/Whitepace---SaaS-Landing-Page-(Community)?node-id=502-168&t=Yg60DmamHzjCy0Xc-0
 
-https://www.figma.com/design/iuUqPGo4UHyJsmdjScdVNZ/Whitepace---SaaS-Landing-Page-(Community)?node-id=527-115&t=Yg60DmamHzjCy0Xc-4
+https://jsonplaceholder.typicode.com/posts
+
+https://jsonplaceholder.typicode.com/photos
