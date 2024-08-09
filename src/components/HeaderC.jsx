@@ -3,24 +3,50 @@ import React from "react";
 function HeaderC() {
   return (
     <>
-      <div
-        className="xl: relative flex items-center justify-between px-4 py-4 sm:px-8 xl:gap-7
-      xl:py-0 2xl:gap-0"
-      >
-        <div className="flex w-full max-w-[165px] items-center">
-          <a className="inline-block" aria-label="Blog Logo" href="/">
-            <h1 className="inline-block text-2xl sm:text-3xl  text-slate-900 tracking-tight dark:text-slate-200">
-              Site Name
+      <div className="headerContainer gap-6">
+        <div className="xl:relative flex items-center justify-between ml-10 mr-10 mt-10 mb-10 ">
+          <div className="flex w-full max-w-[165px] items-center">
+            <h1 className="inline-block text-lg text-slate-900 tracking-tight dark:text-slate-200">
+              <a
+                className="text-black inline-block"
+                aria-label="Blog Logo"
+                href="/"
+              >
+                Site Name
+              </a>
             </h1>
-          </a>
-        </div>
-        <div className="order-2 flex flex-wrap items-center justify-end gap-6 xl:order-3 xl:w-auto">
-          <ul className="flex justify-end gap-4 md:gap-14">
-            <li className="hover:font-bold cursor-pointer">Home</li>
-            <li className="hover:font-bold cursor-pointer">About</li>
-            <li className="hover:font-bold cursor-pointer">Contact</li>
-          </ul>
-          <button>Button</button>
+          </div>
+          <div className="order-2 flex flex-wrap items-center justify-end gap-6 xl:order-3 xl:w-auto ">
+            <ul className="flex justify-end gap-4 md:gap-8 items-center">
+              <li>
+                <a
+                  className="hover:font-bold cursor-pointer text-black"
+                  href="/"
+                >
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:font-bold cursor-pointer text-black"
+                  href="/about"
+                >
+                  <span>About</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:font-bold cursor-pointer text-black"
+                  href="/contact"
+                >
+                  <span>Contact</span>
+                </a>
+              </li>
+              <li>
+                <button className="text-white bg-black">Button</button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </>
