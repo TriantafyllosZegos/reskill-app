@@ -11,9 +11,12 @@ function SinglePost({
 }) {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-10 ">
+      <div
+        key={id}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-10 "
+      >
         <div className="flex flex-col col-span-1 lg:col-span-1 text-justify gap-4">
-          <h1 className="font-bold text-black ">{title}</h1> {/*TITLE*/}
+          <h1 className="font-bold text-black  ">{title}</h1> {/*TITLE*/}
           <h3 className="font-normal text-[#828282]">
             <p>{subheader}</p> {/*SUBHEADER */}
           </h3>

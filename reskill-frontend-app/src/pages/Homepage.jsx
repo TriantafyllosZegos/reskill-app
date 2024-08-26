@@ -24,7 +24,12 @@ function Homepage() {
     fetchPosts();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading)
+    return (
+      <p className="flex text-black text-lg delay-500 font-bold p-10">
+        Loading...
+      </p>
+    );
   if (error) return <p>{error}</p>;
 
   return (

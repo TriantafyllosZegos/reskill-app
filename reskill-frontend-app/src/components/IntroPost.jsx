@@ -8,13 +8,12 @@ function IntroPost() {
           <div>
             <h1 className="font-bold text-black">Posts List</h1>
             <br />
-            <h4 className="text-gray-500 text-xl">
-              {/* Can take var depending !!! */}
+            <h4 className="text-[#828282] text-xl">
               Subheading that sets up context, shares more info about the <br />
               author, or generally gets people psyched to keep reading
             </h4>
             <img
-              className="pt-10 rounded-lg size-full"
+              className="pt-10 rounded-md size-full"
               src="https://s3-alpha-sig.figma.com/img/1481/875b/94ba2048fe9940fe0061a0819ceed048?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m9pLg7AHjOgWLHgvKdK0XRqxqZwdCSvz83bq5bbWBGcWHjJcf19VZExYqLwAveEZYIGV1b-b-JCBzqnUrjzO0Vs9EGzy2KGc-ZBmoEBp5oNsb2vc3BGu1y1~9nEJDFLvL~n~8926Dkx31Y1MHFdYloD6y8DeSy86-2ppD8F~2aBsKNRk6tI9rkeZtvn5TS9VtD~~ebtFoxCSwIzuUrQcNyipzp5E6Y~xP-7H65Pz2L55zNj2aOsuRR2iaC0LOpxqFHiixlS6Qm9DgPG1Ipiz29DGfN8UCxWYhDOAKgUAg4XQDTjZsFoPE7xx-HHMeN0P1~Wl8kDUwLdoIL~QMrS-Nw__"
             ></img>
           </div>
@@ -28,7 +27,7 @@ function IntroPost() {
 }
 
 const BodyTextUp = () => (
-  <body className="flex flex-col gap-6 py-10 lg:pr-52 lg:pl-52 text-xl font-semibold ">
+  <body className="flex flex-col gap-6 py-10 lg:px-52 md:px-32  text-black text-l lg:text-xl font-semibold ">
     <p>
       Body text for your whole article or post. We’ll put in some lorem ipsum to
       show how a filled-out page might look:
@@ -67,7 +66,7 @@ const BodyImages = () => (
   </div>
 );
 const BodyTextDown = () => (
-  <body className="flex flex-col gap-6 lg:py-10 lg:pr-52 lg:pl-52 text-xl font-semibold">
+  <body className="flex flex-col gap-6 lg:py-10 lg:px-52 md:px-32 text-black text-l lg:text-xl font-semibold">
     <p>
       Excepteur efficient emerging, minim veniam anim cloying aute carefully
       curated gauche. Espresso exquisite perfect nostrud nisi intricate.
