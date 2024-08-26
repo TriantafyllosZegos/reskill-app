@@ -1,41 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense} from "react";
 import IntroPost from "../components/IntroPost";
 import Posts from "../components/Posts";
-import axios from "axios";
+import { useLoaderData, Await} from "react-router-dom";
 
 function Homepage() {
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const response = await axios.get("http://localhost:3000/posts"); // Adjust the URL as needed
-        setPosts(response.data);
-      } catch (error) {
-        setError("Error fetching posts");
-        console.error("Error fetching posts:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchPosts();
-  }, []);
-
-  if (loading)
-    return (
-      <p className="flex text-black text-lg delay-500 font-bold p-10">
-        Loading...
-      </p>
-    );
-  if (error) return <p>{error}</p>;
-
+  const {data} = useLoaderData();
+  console.log(data);
   return (
     <div>
       <IntroPost />
-      <Posts posts={posts} />
+        {/* <Suspense fallback={<h1>Loading...</h1>}>
+          <Await resolve={data}>{(resolvedPosts) => (
+            <Posts posts={resolvedPosts}  />
+          )} */}
+          <Posts posts={data}  />
+          {/* </Await>
+        </Suspense> */}
     </div>
   );
 }

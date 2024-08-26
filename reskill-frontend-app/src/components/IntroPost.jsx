@@ -27,7 +27,7 @@ function IntroPost() {
 }
 
 const BodyTextUp = () => (
-  <body className="flex flex-col gap-6 py-10 lg:px-52 md:px-32  text-black text-l lg:text-xl font-semibold ">
+  <div className="flex flex-col gap-6 py-10 lg:px-52 md:px-32  text-black text-l lg:text-xl font-semibold ">
     <p>
       Body text for your whole article or post. We’ll put in some lorem ipsum to
       show how a filled-out page might look:
@@ -49,7 +49,7 @@ const BodyTextUp = () => (
       intricate airport handsome K-pop excepteur classic esse Asia-Pacific
       laboris.
     </p>
-  </body>
+  </div>
 );
 const BodyImages = () => (
   <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-6">
@@ -66,7 +66,7 @@ const BodyImages = () => (
   </div>
 );
 const BodyTextDown = () => (
-  <body className="flex flex-col gap-6 lg:py-10 lg:px-52 md:px-32 text-black text-l lg:text-xl font-semibold">
+  <div className="flex flex-col gap-6 lg:py-10 lg:px-52 md:px-32 text-black text-l lg:text-xl font-semibold">
     <p>
       Excepteur efficient emerging, minim veniam anim cloying aute carefully
       curated gauche. Espresso exquisite perfect nostrud nisi intricate.
@@ -81,7 +81,7 @@ const BodyTextDown = () => (
       Conversation aute wifey id. Qui sunt remarkable deserunt intricate airport
       excepteur classic esse riot girl.
     </p>
-  </body>
+  </div>
 );
 
 export default IntroPost;
