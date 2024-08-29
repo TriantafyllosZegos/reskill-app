@@ -26,7 +26,7 @@ app.get("/posts", async (req, res) => {
         thumbnail: matchingPhoto ? matchingPhoto.thumbnailUrl : null,
       };
     });
-    // setTimeout(() =>res.json(combinedData),1000);
+    // setTimeout(() => res.json(combinedData), 3000);
     res.json(combinedData);
   } catch (error) {
     console.error("Error fetching or posting data:", error);
@@ -34,7 +34,7 @@ app.get("/posts", async (req, res) => {
   }
 });
 app.get("/post/:id", async (req, res) => {
-  const { id } = req.params; 
+  const { id } = req.params;
 
   try {
     const [postResponse, photoResponse] = await Promise.all([
