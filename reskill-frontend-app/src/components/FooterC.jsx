@@ -3,9 +3,9 @@ import React from "react";
 function FooterC() {
   return (
     <>
-      <div className="p-10 ">
+      <div className="p-12 ">
         <hr />
-        <div className="py-10 grid grid-cols-2 gap-8">
+        <div className="pt-12 grid grid-cols-2 gap-8">
           <div className="col-span-1">
             <LeftSide />
           </div>
@@ -27,7 +27,10 @@ const LeftSide = () => (
         </a>
       </h1>
     </div>
-    <div className="flex flex-row  gap-1 items-center">
+    <div
+      className="flex flex-row  gap-2  items-center
+    "
+    >
       <a
         className="hover:scale-125 delay-75 font-bold cursor-pointer"
         href="https://www.facebook.com/zuck/"
@@ -101,8 +104,8 @@ const LeftSide = () => (
 );
 
 const RightSide = () => (
-  <div className="flex flex-row  items-start justify-between ">
-    <div className="flex flex-col  gap-3">
+  <div className="flex flex-row items-start  justify-between ">
+    <div className="flex flex-col items-start gap-3 md:pr-16 lg:pr-20">
       <span className="text-xl font-bold">Topic</span>
       <a className="hover:font-bold cursor-pointer text-black" href="/">
         <span>Page</span>
@@ -114,7 +117,7 @@ const RightSide = () => (
         <span>Page</span>
       </a>
     </div>
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col items-start gap-3 md:pr-16 lg:pr-20">
       <span className="text-xl font-bold">Topic</span>
       <a className="hover:font-bold cursor-pointer text-black" href="/">
         <span>Page</span>
@@ -126,7 +129,7 @@ const RightSide = () => (
         <span>Page</span>
       </a>
     </div>
-    <div className="flex flex-col gap-3 ">
+    <div className="flex flex-col items-start gap-3 md:pr-16 lg:pr-20">
       <span className="text-xl font-bold">Topic</span>
       <a className="hover:font-bold cursor-pointer text-black" href="/">
         <span>Page</span>

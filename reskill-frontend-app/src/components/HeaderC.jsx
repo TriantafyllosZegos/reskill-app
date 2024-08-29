@@ -3,7 +3,7 @@ import React from "react";
 function HeaderC() {
   return (
     <>
-      <div className="py-5 px-10 md:p-10 lg:p-10  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:gap-10 ">
+      <div className="py-5 px-12 md:p-12 lg:p-12  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:gap-10 ">
         <div className=" md:col-span-1  lg:col-span-3">
           <LeftSide />
         </div>

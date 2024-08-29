@@ -9,27 +9,30 @@ const capitalizeFirstLetter = (str) => {
 function Posts({ posts }) {
   return (
     <>
-      <div className="flex flex-col gap-10 p-10">
+      <div className="flex flex-col gap-8 p-12">
         <h1 className="text-black text-4xl font-bold">
           Related articles or posts
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {posts.map((item) => (
-            <div key={item.id}>
+            <div key={item.id} className="flex flex-col ">
               <Link
-                className="flex flex-col gap-1 hover:scale-105 transition-transform"
+                className="flex flex-col  hover:scale-105 transition-transform "
                 to={`/singlepost/${item.id}`}
               >
                 <img
-                  className=" aspect-square rounded-lg "
+                  className=" aspect-square rounded-lg  "
                   src={item.thumbnail}
                 />
-
-                <h3 className="text-black text-lg">
+              </Link>
+              <div className="flex flex-col justify-between flex-grow pt-6 h-full">
+                <h3 className="text-black font-semibold text-lg">
                   {capitalizeFirstLetter(item.title)}
                 </h3>
-                <h4 className="font-normal text-base text-[#828282]">Daffy</h4>
-              </Link>
+                <h4 className="font-normal text-base text-[#828282]">
+                  Autor No.{item.userId}
+                </h4>
+              </div>
             </div>
           ))}
         </div>

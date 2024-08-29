@@ -10,12 +10,6 @@ function ContactPage() {
           </h1>
           <form action="#" method="POST">
             <div className="mb-4">
-              <label
-                htmlFor="name"
-                className="block text-gray-700 font-medium mb-2"
-              >
-                Name
-              </label>
               <input
                 type="text"
                 id="name"
