@@ -1,40 +1,63 @@
+import React, { Suspense, lazy } from "react";
 import "./App.css";
+import Loader from "./components/Loader";
 import FooterC from "./components/FooterC";
 import HeaderC from "./components/HeaderC";
-import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
 import ErrorPage from "./pages/ErrorPage";
-import Homepage from "./pages/Homepage";
-import SinglePost from "./pages/SinglePost";
 import axios from "axios";
-import { createBrowserRouter, defer, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const Homepage = lazy(() => import("./pages/Homepage"));
+const SinglePost = lazy(() => import("./pages/SinglePost"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
 
 const router = createBrowserRouter([
   {
     path: "/",
-    loader: async() => {
+    loader: async () => {
       const response = axios.get("http://localhost:3000/posts");
       return response;
-    } ,
-    element: <Homepage />,
+    },
+    element: (
+      <Suspense fallback={<Loader />}>
+        <Homepage />
+      </Suspense>
+    ),
     errorElement: <ErrorPage />,
   },
   {
     path: "/singlepost/:id",
-    loader: async({params}) => {
-      const response = await axios.get(`http://localhost:3000/post/${params.id}`);
+    loader: async ({ params }) => {
+      const response = await axios.get(
+        `http://localhost:3000/post/${params.id}`
+      );
       return response;
-    } ,
-    element: <SinglePost />,
-    // errorElement: <ErrorPage />,
+    },
+    element: (
+      <Suspense fallback={<Loader />}>
+        <SinglePost />
+      </Suspense>
+    ),
+    errorElement: <ErrorPage />,
   },
   {
     path: "/about",
-    element: <AboutPage />,
+    element: (
+      <Suspense fallback={<Loader />}>
+        <AboutPage />
+      </Suspense>
+    ),
+    errorElement: <ErrorPage />,
   },
   {
     path: "/contact",
-    element: <ContactPage />,
+    element: (
+      <Suspense fallback={<Loader />}>
+        <ContactPage />
+      </Suspense>
+    ),
+    errorElement: <ErrorPage />,
   },
 ]);
 

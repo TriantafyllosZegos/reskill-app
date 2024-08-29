@@ -3,9 +3,9 @@ import React from "react";
 function FooterC() {
   return (
     <>
-      <hr />
       <div className="p-10 ">
-        <div className="grid grid-cols-2 gap-8">
+        <hr />
+        <div className="py-10 grid grid-cols-2 gap-8">
           <div className="col-span-1">
             <LeftSide />
           </div>

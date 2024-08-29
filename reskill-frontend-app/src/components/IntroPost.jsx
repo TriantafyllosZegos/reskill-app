@@ -1,4 +1,7 @@
 import React from "react";
+import image1 from "../assets/images/image1.png";
+import image2 from "../assets/images/image2.png";
+import image3 from "../assets/images/image3.png";
 
 function IntroPost() {
   return (
@@ -12,10 +15,7 @@ function IntroPost() {
               Subheading that sets up context, shares more info about the <br />
               author, or generally gets people psyched to keep reading
             </h4>
-            <img
-              className="pt-10 rounded-md size-full"
-              src="https://s3-alpha-sig.figma.com/img/1481/875b/94ba2048fe9940fe0061a0819ceed048?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m9pLg7AHjOgWLHgvKdK0XRqxqZwdCSvz83bq5bbWBGcWHjJcf19VZExYqLwAveEZYIGV1b-b-JCBzqnUrjzO0Vs9EGzy2KGc-ZBmoEBp5oNsb2vc3BGu1y1~9nEJDFLvL~n~8926Dkx31Y1MHFdYloD6y8DeSy86-2ppD8F~2aBsKNRk6tI9rkeZtvn5TS9VtD~~ebtFoxCSwIzuUrQcNyipzp5E6Y~xP-7H65Pz2L55zNj2aOsuRR2iaC0LOpxqFHiixlS6Qm9DgPG1Ipiz29DGfN8UCxWYhDOAKgUAg4XQDTjZsFoPE7xx-HHMeN0P1~Wl8kDUwLdoIL~QMrS-Nw__"
-            ></img>
+            <img className="pt-10 rounded-md size-full" src={image1}></img>
           </div>
           <BodyTextUp />
           <BodyImages />
@@ -56,12 +56,14 @@ const BodyImages = () => (
     <img
       alt="canoe sunny"
       className="rounded-lg "
-      src="https://s3-alpha-sig.figma.com/img/01f1/1c37/e0ab433c61f442ca93a32acb917178ed?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EGLYP-pFFVtJaOUBRMHhmzG--ms71ehUr-pQsplvlIqAjM8UDIK7OMeS08S5X-1kiyGphrHGxYHj7wwAPWL3KlKaBQERTxK1-3I2kRmRYZInBqO-BhwU9uBb-X27W2h-Ey3vsIuPWpVxxROTMkuvRKcGO-HTa39eNUMkvrsbVRczdDDSDNMr6-e-zXvZ4iOghEau4OYq38hW3XEqst6x4ihOO17g8MypDXsPqw2QT7fZ61jcDifF4BH~Hw~PrNC-fodTM1qPmxjLMUKnpRaJL4b5t4r~~BxX4Nn7ddav9xEOqpBFfnowPr5AKDrBVtLKuhZ554D1rev4QbWZJKvgZw__"
+      src={image2}
+      loading="lazy"
     ></img>
     <img
       alt="canoe foggy"
       className="rounded-lg "
-      src="https://s3-alpha-sig.figma.com/img/e627/001c/1005cc3458de9e392a25afc30a634e1d?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IaK0x15yp3V9V1vM6RSf245oNb2Gu-95SsA4wRgDHrlZLH6CY4ND44bLmWOvTJ6uHP-Kdml0HTboBT4EfMkO~9dvHK3Vh1saRMi2KrETlEBVB4Z3JavJTKJ-Dwk5-GmtSvpha294o9jdOa-cceJAmA8rII0IOUowKa84g1swIYi54Toadsh1de8rS9MqaNgMonugm2i7q0cgpyxL7z-ACNS9nNtix4vYFsO2bG5w7fP-CVEvmhc7iF-xvEUMyVKJ2cYDnqPvjd3L3lQNUipCGMS9Z7dArVHhGkje3EkGcqt6sCx01ta0Nr5RXFGDET0t7QfsiU5hcEUjOVJdDDfEpA__"
+      src={image3}
+      loading="lazy"
     ></img>
   </div>
 );
