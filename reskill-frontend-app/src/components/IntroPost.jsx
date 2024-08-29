@@ -27,7 +27,7 @@ function IntroPost() {
 }
 
 const BodyTextUp = () => (
-  <div className="flex flex-col gap-6 py-10 lg:px-52 md:px-32  text-black text-l lg:text-xl font-semibold ">
+  <div className="flex flex-col gap-6 py-10 lg:px-52 md:px-32  text-black text-l font-semibold ">
     <p>
       Body text for your whole article or post. We’ll put in some lorem ipsum to
       show how a filled-out page might look:
@@ -52,7 +52,7 @@ const BodyTextUp = () => (
   </div>
 );
 const BodyImages = () => (
-  <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-6">
+  <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-8">
     <img
       alt="canoe sunny"
       className="rounded-lg "
@@ -68,7 +68,7 @@ const BodyImages = () => (
   </div>
 );
 const BodyTextDown = () => (
-  <div className="flex flex-col gap-6 lg:py-10 lg:px-52 md:px-32 text-black text-l lg:text-xl font-semibold">
+  <div className="flex flex-col gap-6 lg:py-10 lg:px-52 md:px-32 text-black text-l  font-semibold">
     <p>
       Excepteur efficient emerging, minim veniam anim cloying aute carefully
       curated gauche. Espresso exquisite perfect nostrud nisi intricate.
