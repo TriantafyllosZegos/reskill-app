@@ -9,7 +9,7 @@ const capitalizeFirstLetter = (str) => {
 function Posts({ posts }) {
   return (
     <>
-      <div className="flex flex-col gap-8 p-12">
+      <div className="flex flex-col gap-8 p-20">
         <h1 className="text-black font-[600] text-[40px] ">
           Related articles or posts
         </h1>

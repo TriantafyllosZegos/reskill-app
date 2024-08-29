@@ -14,7 +14,7 @@ function SinglePost() {
     <>
       <div
         key={data.id}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-12 "
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-20 "
       >
         <div className="flex flex-col col-span-1 text-justify gap-4">
           <h1 className="font-[700] text-[64px] text-black  text-left">
