@@ -8,12 +8,14 @@ app.use(cors());
 
 app.get("/posts", async (req, res) => {
   try {
+    const limit = parseInt(req.query.limit) || 9; // Get the limit from query params, default to 10
+
     const [postsResponse, photosResponse] = await Promise.all([
       axios.get("https://jsonplaceholder.typicode.com/posts"),
       axios.get("https://jsonplaceholder.typicode.com/photos"),
     ]);
 
-    const posts = postsResponse.data;
+    const posts = postsResponse.data.slice(0, limit); // Limit the number of posts
     const photos = photosResponse.data;
 
     const combinedData = posts.map((post) => {
@@ -26,13 +28,14 @@ app.get("/posts", async (req, res) => {
         thumbnail: matchingPhoto ? matchingPhoto.thumbnailUrl : null,
       };
     });
-    // setTimeout(() => res.json(combinedData), 3000);
+
     res.json(combinedData);
   } catch (error) {
     console.error("Error fetching or posting data:", error);
     res.status(500).json({ error: "Failed to fetch or post data" });
   }
 });
+
 app.get("/post/:id", async (req, res) => {
   const { id } = req.params;
 
