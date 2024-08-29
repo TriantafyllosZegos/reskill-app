@@ -34,7 +34,7 @@ app.get("/posts", async (req, res) => {
   }
 });
 app.get("/post/:id", async (req, res) => {
-  const { id } = req.params; // Get the post ID from the request parameters
+  const { id } = req.params; 
 
   try {
     const [postResponse, photoResponse] = await Promise.all([
