@@ -15,7 +15,7 @@ function Posts({ posts }) {
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {posts.map((item) => (
-            <div key={item.id} className="flex flex-col ">
+            <div key={item.id} className="flex flex-col pb-24  ">
               <Link
                 className="flex flex-col  hover:scale-105 transition-transform "
                 to={`/singlepost/${item.id}`}
@@ -24,15 +24,15 @@ function Posts({ posts }) {
                   className=" aspect-square rounded-lg  "
                   src={item.thumbnail}
                 />
+                <div className="flex flex-col justify-between flex-grow pt-6 h-full">
+                  <h3 className="text-black font-semibold text-lg line-clamp-1 hover:line-clamp-none ">
+                    {capitalizeFirstLetter(item.title)}
+                  </h3>
+                  <h4 className="font-normal text-base text-[#828282]">
+                    Autor No.{item.userId}
+                  </h4>
+                </div>
               </Link>
-              <div className="flex flex-col justify-between flex-grow pt-6 h-full">
-                <h3 className="text-black font-semibold text-lg">
-                  {capitalizeFirstLetter(item.title)}
-                </h3>
-                <h4 className="font-normal text-base text-[#828282]">
-                  Autor No.{item.userId}
-                </h4>
-              </div>
             </div>
           ))}
         </div>
