@@ -21,7 +21,7 @@ function FooterC() {
 const LeftSide = () => (
   <div className="flex flex-col items-start gap-20">
     <div>
-      <h1 className=" inline-block text-lg text-slate-900 tracking-tight dark:text-slate-200">
+      <h1 className=" inline-block font-[400] text-[24px] text-slate-900 tracking-tight dark:text-slate-200">
         <a className="text-black inline-block" aria-label="Blog Logo" href="/">
           Site Name
         </a>
@@ -106,38 +106,38 @@ const LeftSide = () => (
 const RightSide = () => (
   <div className="flex flex-row items-start  justify-between ">
     <div className="flex flex-col items-start gap-3 md:pr-16 lg:pr-20">
-      <span className="text-xl font-bold">Topic</span>
-      <a className="hover:font-bold cursor-pointer text-black" href="/">
+      <span className="text-black font-[500] text-[16px]">Topic</span>
+      <a className="hover:font-bold cursor-pointer text-[#454545]" href="/">
         <span>Page</span>
       </a>
-      <a className="hover:font-bold cursor-pointer text-black" href="/">
+      <a className="hover:font-bold cursor-pointer text-[#454545]" href="/">
         <span>Page</span>
       </a>
-      <a className="hover:font-bold cursor-pointer text-black" href="/">
-        <span>Page</span>
-      </a>
-    </div>
-    <div className="flex flex-col items-start gap-3 md:pr-16 lg:pr-20">
-      <span className="text-xl font-bold">Topic</span>
-      <a className="hover:font-bold cursor-pointer text-black" href="/">
-        <span>Page</span>
-      </a>
-      <a className="hover:font-bold cursor-pointer text-black" href="/">
-        <span>Page</span>
-      </a>
-      <a className="hover:font-bold cursor-pointer text-black" href="/">
+      <a className="hover:font-bold cursor-pointer text-[#454545]" href="/">
         <span>Page</span>
       </a>
     </div>
     <div className="flex flex-col items-start gap-3 md:pr-16 lg:pr-20">
-      <span className="text-xl font-bold">Topic</span>
-      <a className="hover:font-bold cursor-pointer text-black" href="/">
+      <span className="text-black font-[500] text-[16px]">Topic</span>
+      <a className="hover:font-bold cursor-pointer text-[#454545]" href="/">
         <span>Page</span>
       </a>
-      <a className="hover:font-bold cursor-pointer text-black" href="/">
+      <a className="hover:font-bold cursor-pointer text-[#454545]" href="/">
         <span>Page</span>
       </a>
-      <a className="hover:font-bold cursor-pointer text-black" href="/">
+      <a className="hover:font-bold cursor-pointer text-[#454545]" href="/">
+        <span>Page</span>
+      </a>
+    </div>
+    <div className="flex flex-col items-start gap-3 md:pr-16 lg:pr-20">
+      <span className="text-black font-[500] text-[16px]">Topic</span>
+      <a className="hover:font-bold cursor-pointer text-[#454545]" href="/">
+        <span>Page</span>
+      </a>
+      <a className="hover:font-bold cursor-pointer text-[#454545]" href="/">
+        <span>Page</span>
+      </a>
+      <a className="hover:font-bold cursor-pointer text-[#454545]" href="/">
         <span>Page</span>
       </a>
     </div>

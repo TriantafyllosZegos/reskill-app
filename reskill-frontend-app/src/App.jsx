@@ -16,7 +16,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     loader: async () => {
-      const response = axios.get("http://localhost:3000/posts");
+      const response = axios.get(`http://localhost:3000/posts?limit=9`);
       return response;
     },
     element: (

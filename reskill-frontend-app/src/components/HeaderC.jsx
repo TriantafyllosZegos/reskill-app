@@ -3,7 +3,7 @@ import React from "react";
 function HeaderC() {
   return (
     <>
-      <div className="py-5 px-12 md:p-12 lg:p-12  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:gap-10 ">
+      <div className="py-14 px-12 md:p-12 lg:p-20  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:gap-10 ">
         <div className=" md:col-span-1  lg:col-span-3">
           <LeftSide />
         </div>
@@ -19,7 +19,11 @@ function HeaderC() {
 const LeftSide = () => (
   <div className="py-5 lg:py-0 md:py-0  flex flex-col">
     <h1 className="text-xl font-bold text-black">
-      <a className="text-black inline-block " aria-label="Blog Logo" href="/">
+      <a
+        className="text-black font-[500] text-[20px] inline-block "
+        aria-label="Blog Logo"
+        href="/"
+      >
         Site Name
       </a>
     </h1>
@@ -30,7 +34,7 @@ const RightSide = () => (
     <ul className="flex flex-row justify-start md:justify-end lg:justify-end gap-5 md:gap-6 lg:gap-7 items-center">
       <li>
         <a
-          className="hover:font-bold font-bold cursor-pointer text-black"
+          className="hover:font-bold font-[500] text-[20px] cursor-pointer text-black"
           href="/"
         >
           <span>Home</span>
@@ -38,7 +42,7 @@ const RightSide = () => (
       </li>
       <li>
         <a
-          className="hover:font-bold font-bold cursor-pointer text-black"
+          className="hover:font-bold font-[500] text-[20px] cursor-pointer text-black"
           href="/about"
         >
           <span>About</span>
@@ -46,7 +50,7 @@ const RightSide = () => (
       </li>
       <li>
         <a
-          className="hover:font-bold font-bold cursor-pointer text-black"
+          className="hover:font-bold font-[500] text-[20px] cursor-pointer text-black"
           href="/contact"
         >
           <span>Contact</span>

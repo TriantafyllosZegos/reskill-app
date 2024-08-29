@@ -7,11 +7,11 @@ function IntroPost() {
   return (
     <>
       <div className="introPost">
-        <div className="flex flex-col gap-10  p-12">
+        <div className="flex flex-col gap-10  p-20">
           <div>
-            <h1 className="font-bold text-black">Posts List</h1>
+            <h1 className="font-bold text-black text-[64px]">Posts List</h1>
             <br />
-            <h4 className="text-[#828282] text-xl">
+            <h4 className="text-[#828282] text-[24px] font-[400]">
               Subheading that sets up context, shares more info about the <br />
               author, or generally gets people psyched to keep reading
             </h4>
@@ -27,7 +27,7 @@ function IntroPost() {
 }
 
 const BodyTextUp = () => (
-  <div className="flex flex-col gap-6 py-10 lg:px-52 md:px-32  text-black text-l font-semibold ">
+  <div className="flex flex-col gap-6 py-20 lg:px-52 md:px-32  text-black text-l text-[20px] font-[500] ">
     <p>
       Body text for your whole article or post. We’ll put in some lorem ipsum to
       show how a filled-out page might look:
@@ -68,7 +68,7 @@ const BodyImages = () => (
   </div>
 );
 const BodyTextDown = () => (
-  <div className="flex flex-col gap-6 lg:py-10 lg:px-52 md:px-32 text-black text-l  font-semibold">
+  <div className="flex flex-col gap-6 lg:py-20 lg:px-52 md:px-32 text-black text-[20px] font-[500]">
     <p>
       Excepteur efficient emerging, minim veniam anim cloying aute carefully
       curated gauche. Espresso exquisite perfect nostrud nisi intricate.
