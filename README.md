@@ -20,6 +20,7 @@ On the backend, implemented in `server.js`, I used Express, Axios, and the CORS 
      - `title`
      - `thumbnail`
    - **Description:** This route combines data from two URLs to provide a list of posts with their associated thumbnails. The response also includes a `limit` parameter to control the number of posts fetched.
+   - **Key Point:** The number of posts returned can be limited by passing a `limit` parameter in the request.
 
 2. **`/post/:id` Route:**
    - **Returns:**
@@ -62,6 +63,9 @@ The frontend is where I invested most of my effort for this assignment. The proj
 ### Routing
 
 - **`App.jsx`**: Implements React Router for navigation between different pages.
+  - **Key Point:** For routing, two different methods are used:
+    1. **`/post/:id` Route:** Uses `useLoaderData` to fetch the post details.
+    2. **`/posts` Route:** Uses `useEffect` to fetch posts and manage state.
 
 ## Installation and Running the Project
 
