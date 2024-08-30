@@ -16,15 +16,15 @@ function SinglePost() {
         key={data.id}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-20 "
       >
-        <div className="flex flex-col col-span-1 text-justify gap-6 pr-4">
-          <h1 className="font-[700] text-[64px] text-black  text-left">
+        <div className="flex flex-col col-span-1 gap-6 pr-4 tracking-tight ">
+          <h1 className="font-[700] text-[64px] text-black  text-left tracking-tight">
             {capitalizeFirstLetter(data.title)}
           </h1>{" "}
           {/*TITLE*/}
-          <h3 className="font-[400] text-[24px] text-[#828282]">
+          <h3 className="font-[400] text-[24px] text-[#828282]  text-left">
             <p>{capitalizeFirstLetter(data.subheader)}</p> {/*SUBHEADER */}
           </h3>
-          <h2 className="font-[500] text-[20px]">
+          <h2 className="font-[500] text-[20px]  text-left ">
             {" "}
             {/*BODY */}
             <p className="text-left text-black">
@@ -35,7 +35,7 @@ function SinglePost() {
             <p className="text-left text-black">{data.paragraph3}</p>
           </h2>
         </div>
-        <div className="flex col-span-1 lg:col-span-1 justify-end pl-0 md:pl-16 lg:pl-16 pr-1 ">
+        <div className="flex col-span-1 lg:col-span-1 justify-end pl-0 md:pl-16 lg:pl-28 pr-1 kg:pb-10 ">
           {/*IMAGE */}
           <img src={data.photo} alt="Photo" className="rounded-md" />
         </div>

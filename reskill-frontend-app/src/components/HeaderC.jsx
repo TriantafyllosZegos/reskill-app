@@ -20,7 +20,7 @@ const LeftSide = () => (
   <div className="py-5 lg:py-0 md:py-0  flex flex-col">
     <h1 className="text-xl font-bold text-black">
       <a
-        className="text-black font-[500] text-[20px] inline-block "
+        className="text-black font-[400] text-[24px] inline-block "
         aria-label="Blog Logo"
         href="/"
       >

@@ -16,14 +16,6 @@ const ContactPage = lazy(() => import("./pages/ContactPage"));
 const router = createBrowserRouter([
   {
     path: "/",
-    // loader: async () => {
-    //   const response = axios.get(`http://localhost:3000/posts?limit=9`);
-    //   return response;
-    // },
-    // element: (
-    //   <Suspense fallback={<Loader />}>
-    //     <Homepage />
-    //   </Suspense>
     element: <Homepage />,
     errorElement: <ErrorPage />,
   },
