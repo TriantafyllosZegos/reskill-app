@@ -18,7 +18,7 @@ function HeaderC() {
 
 const LeftSide = () => (
   <div className="py-5 lg:py-0 md:py-0  flex flex-col">
-    <h1 className="text-xl font-bold text-black">
+    <h1 className="text-xl font-bold text-black tracking-tight">
       <a
         className="text-black font-[400] text-[24px] inline-block "
         aria-label="Blog Logo"
@@ -30,7 +30,7 @@ const LeftSide = () => (
   </div>
 );
 const RightSide = () => (
-  <div className="flex flex-col ">
+  <div className="flex flex-col tracking-tight">
     <ul className="flex flex-row justify-start md:justify-end lg:justify-end gap-5 md:gap-6 lg:gap-7 items-center">
       <li>
         <a

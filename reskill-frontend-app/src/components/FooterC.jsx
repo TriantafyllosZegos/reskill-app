@@ -5,7 +5,7 @@ function FooterC() {
     <>
       <div className="p-20 ">
         <hr />
-        <div className="pt-12 grid grid-cols-2 gap-8">
+        <div className="pt-12 grid grid-cols-2 gap-8 ">
           <div className="col-span-1">
             <LeftSide />
           </div>
@@ -19,7 +19,7 @@ function FooterC() {
 }
 
 const LeftSide = () => (
-  <div className="flex flex-col items-start gap-20">
+  <div className="flex flex-col items-start gap-20 ">
     <div>
       <h1 className=" inline-block font-[400] text-[24px] text-slate-900 tracking-tight dark:text-slate-200">
         <a className="text-black inline-block" aria-label="Blog Logo" href="/">
@@ -104,7 +104,7 @@ const LeftSide = () => (
 );
 
 const RightSide = () => (
-  <div className="flex flex-row items-start  justify-between ">
+  <div className="flex flex-row items-start  justify-between tracking-tight">
     <div className="flex flex-col items-start gap-3 md:pr-16 lg:pr-20">
       <span className="text-black font-[500] text-[16px]">Topic</span>
       <a className="hover:font-bold cursor-pointer text-[#454545]" href="/">
