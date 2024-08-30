@@ -26,7 +26,7 @@ function Homepage() {
     };
 
     fetchPosts();
-  }, []); // Empty dependency array means this effect runs once on mount
+  }, []); 
 
   if (loading) {
     return <Loader />;
