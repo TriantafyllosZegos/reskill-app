@@ -1,15 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import IntroPost from "../components/IntroPost";
 import Posts from "../components/Posts";
-import { useLoaderData } from "react-router-dom";
+import Loader from "../components/Loader";
+// import { useLoaderData } from "react-router-dom";
+
+// const { data } = useLoaderData();
+// console.log(data);
 
 function Homepage() {
-  const { data } = useLoaderData();
-  console.log(data);
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const response = await axios.get("http://localhost:3000/posts?limit=9");
+        setPosts(response.data);
+      } catch (err) {
+        setError("Failed to fetch posts");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPosts();
+  }, []); // Empty dependency array means this effect runs once on mount
+
+  if (loading) {
+    return <Loader />;
+  }
+
+  if (error) {
+    return <p>{error}</p>;
+  }
   return (
     <div>
       <IntroPost />
-      <Posts posts={data} />
+      <Posts posts={posts} />
     </div>
   );
 }
