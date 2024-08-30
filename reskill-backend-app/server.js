@@ -39,6 +39,25 @@ app.get("/posts", async (req, res) => {
 app.get("/post/:id", async (req, res) => {
   const { id } = req.params;
 
+  if (id === "9999") {
+    const specialData = {
+      userId: 1,
+      id: 9999,
+      title: "Single Post",
+      subheader: "Subheading for description or instructions",
+      paragraph1:
+        "Body text for your whole article or post. We’ll put in some lorem ipsum to show how a filled-out page might look:",
+      paragraph2:
+        "Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza conversation exquisite perfect nostrud nisi intricate Content. Qui  international first-class nulla ut. Punctual adipisicing, essential lovely queen tempor eiusmod irure.",
+      paragraph3:
+        "Exclusive izakaya charming Scandinavian impeccable aute quality of life soft power pariatur Melbourne occaecat discerning. Qui wardrobe aliquip, et Porter destination Toto remarkable officia Helsinki excepteur Basset hound. Zürich sleepy perfect consectetur.",
+      photo:
+        "https://s3-alpha-sig.figma.com/img/031d/ee8a/d390261e0a59354a086f7e9a9be4cb3b?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nNDaU2NXH1y2IHxhWvuZJMz0FGhBtSkrmJ1XAU2PASKaxDu81Mp~1bZII05vrrnA78vTLKGwFZYL9z9RNn4B~eOmSKZ0mU-C3oRfFZ2v84rDtoEbKzGP46RbuCZGifeT5KdwP1r1Gr8nyClckW2wgm2Ay8tHhh4JzbutmJzwl5bFDehuEiGHW1AYV28a0FbfEDaZDlNO37J~4MbI5irOL2uVs6POPljJ7y~gBSwTgGfIBbJVacFvDGngAmXMqZQTGwSSsKrGxrH8XLKsZcCgz-tHAimYw5-Y1RMBNZo1Uqz~wHxo3y0M1ykELLqm4Kmjyjabz7KInSAUx6lJY1IiOQ__",
+    };
+
+    return res.json(specialData);
+  }
+
   try {
     const [postResponse, photoResponse] = await Promise.all([
       axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`),
