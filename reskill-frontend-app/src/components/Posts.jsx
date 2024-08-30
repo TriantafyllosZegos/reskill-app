@@ -25,8 +25,8 @@ function Posts({ posts }) {
                   src={item.thumbnail}
                 />
                 <div className="flex flex-col justify-between flex-grow pt-6 h-full">
-                  <h3 className="text-black font-[500] text-[20px] line-clamp-1 hover:line-clamp-none ">
-                    {capitalizeFirstLetter(item.title)}
+                  <h3 className="text-black font-[500] text-[20px] line-clamp-1 hover:line-clamp-none capitalize">
+                    {item.title}
                   </h3>
                   <h4 className="font-[500] text-[20px] text-[#828282]">
                     Author No.{item.userId}

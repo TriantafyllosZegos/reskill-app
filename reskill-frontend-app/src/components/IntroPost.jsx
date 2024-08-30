@@ -29,7 +29,7 @@ function IntroPost() {
 }
 
 const BodyTextUp = () => (
-  <div className="flex flex-col gap-6 py-20 lg:px-52 md:px-32  text-black text-l text-[20px] font-[500] tracking-tight ">
+  <div className="flex flex-col gap-6  lg:px-52 md:px-32  text-black text-l text-[20px] font-[500] tracking-tight ">
     <p>
       Body text for your whole article or post. We’ll put in some lorem ipsum to
       show how a filled-out page might look:

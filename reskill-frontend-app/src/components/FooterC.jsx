@@ -3,7 +3,7 @@ import React from "react";
 function FooterC() {
   return (
     <>
-      <div className="p-20 ">
+      <div className="px-20 pb-10 ">
         <hr />
         <div className="pt-12 grid grid-cols-2 gap-8 ">
           <div className="col-span-1">
