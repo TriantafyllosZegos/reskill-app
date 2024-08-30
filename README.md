@@ -63,6 +63,30 @@ The frontend is where I invested most of my effort for this assignment. The proj
 
 - **`App.jsx`**: Implements React Router for navigation between different pages.
 
+## Installation and Running the Project
+
+To get the project up and running, follow these steps:
+
+1. **Install Dependencies:**
+
+   - Navigate to the backend directory and run:
+     ```bash
+     npm install
+     ```
+   - Navigate to the frontend directory and run:
+     ```bash
+     npm install
+     ```
+
+2. **Run the Project:**
+
+   - In both the backend and frontend directories, use the following command to start the project:
+     ```bash
+     npm run dev
+     ```
+
+   This will start both the backend and frontend servers in development mode.
+
 For any questions or further clarifications, feel free to ask.
 
 Thank you for reading,
