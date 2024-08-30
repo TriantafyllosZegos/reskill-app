@@ -7,7 +7,7 @@ function IntroPost() {
   return (
     <>
       <div className="introPost">
-        <div className="flex flex-col gap-10  p-20">
+        <div className="flex flex-col gap-10  px-20 pb-20 pt-10">
           <div>
             <h1 className="font-bold text-black text-[64px] tracking-tight">
               Posts List
